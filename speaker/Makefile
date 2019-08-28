@@ -8,4 +8,8 @@ build: clean build_contracts
 	klab build
 
 run:
-	klab prove-all
+	klab prove --dump Speaker__exhaustiveness
+	klab prove --dump Speaker_say_pass_rough
+	klab prove --dump Speaker_say_fail_rough
+	klab prove --dump Speaker_setPhrase_pass_rough
+	klab prove --dump Speaker_setPhrase_fail_rough
